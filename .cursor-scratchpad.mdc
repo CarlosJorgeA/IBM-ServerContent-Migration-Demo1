@@ -1,0 +1,46 @@
+---
+description: 
+globs: 
+alwaysApply: false
+---
+## Task: Migrate IBM App Connect Enterprise project to Apache Camel (Spring Boot)
+
+We have an integration flow developed in IBM App Connect Enterprise (ACE) that needs to be migrated to Apache Camel using Java and Spring Boot. The project is already structured and pushed to this GitHub repository:
+
+git@github.com:CarlosJorgeA/IBM-ServerContent-Migration-Demo1.git
+
+Please follow this process:
+
+1. Analyze the structure of the ACE project.
+2. Understand the logic defined in `.msgflow` and `.esql` files.
+3. Recreate the logic in Apache Camel DSL (Java preferred, Spring Boot-based).
+4. Replace ESQL logic with equivalent Camel Processors.
+5. Generate the full Camel application structure (routes, processors, config, etc.).
+6. Add README instructions to explain how to run the new project.
+
+Important implementation details:
+- Use standard Java getters/setters instead of Lombok to avoid annotation processing issues
+- For REST endpoints, use the pattern: `rest("/endpoint").get().to("direct:processName")` followed by a separate route definition
+- Include the camel-servlet dependency in pom.xml for REST endpoints
+- Ensure all model classes have proper getters and setters
+
+---
+
+### Scratchpad
+
+**Migration Plan**  
+[ ] Step 1: Analyze flow `CounterFlow.msgflow` and logic in `CounterFlow_Compute.esql`  
+[ ] Step 2: Identify input/output data formats  
+[ ] Step 3: Create equivalent Apache Camel route  
+[ ] Step 4: Implement the processor that performs the counter logic  
+[ ] Step 5: Generate Maven project with Spring Boot  
+[ ] Step 6: Test the result with the same input  
+[ ] Step 7: Document how to run the project  
+
+---
+
+### Notes
+
+- The flow increments a counter from the input `Environment.Variables.counter` and returns a JSON with the new value and a success message.
+- This logic should be implemented using a Camel route with a custom processor in Java.
+- Please make use of Camel's JSON support for input/output.
