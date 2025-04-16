@@ -1,0 +1,18 @@
+CREATE COMPUTE MODULE counter_Compute
+    CREATE FUNCTION Main() RETURNS BOOLEAN
+    BEGIN
+        DECLARE counter INTEGER;
+        SET counter = CAST(Environment.Variables.counter AS INTEGER);
+        IF counter IS NULL THEN
+            SET counter = 0;
+        END IF;
+        SET counter = counter + 1;
+        SET Environment.Variables.counter = CAST(counter AS CHAR);
+
+    
+        SET OutputRoot.JSON.Data.counter = counter;
+        SET OutputRoot.JSON.Data.message = 'Counter incremented successfully';
+
+        RETURN TRUE;
+    END;
+END MODULE;

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Broker deployBarfile="C:\Users\Carlos_Jorge_Avila\Desktop\APIC\TestProd\GeneratedBarFiles\TESTproject.generated.bar" deployTimestamp="2025-04-16 12:34:10">
+  <CompiledApplication>
+    <ConfigurableProperty uri="startMode">
+    </ConfigurableProperty>
+  </CompiledApplication>
+  <CompiledMessageFlow name="counter" deployBarfile="C:\Users\Carlos_Jorge_Avila\Desktop\APIC\TestProd\GeneratedBarFiles\TESTproject.generated.bar" deployTimestamp="2025-04-16 12:34:10">
+    <ConfigurableProperty uri="counter#Compute.connectDatasourceBeforeFlowStarts">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="counter#Compute.dataSource">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="counter#Compute.validateMaster">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="counter#HTTP Input.URLSpecifier" override="/counter">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="counter#HTTP Input.decompressInputMessage">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="counter#HTTP Input.faultFormat">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="counter#HTTP Input.securityProfileName">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="counter#HTTP Input.timeoutForClient">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="counter#HTTP Input.useHTTPS">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="counter#HTTP Input.validateMaster">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="counter#HTTP Reply.compressionType">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="counter#HTTP Reply.validateMaster">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="counter#additionalInstances">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="counter#commitCount">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="counter#commitInterval">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="counter#consumerPolicySet">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="counter#consumerPolicySetBindings">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="counter#coordinatedTransaction">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="counter#maximumRateMsgsPerSec">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="counter#monitoringProfile">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="counter#notificationThresholdMsgsPerSec">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="counter#processingTimeoutAction">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="counter#processingTimeoutSec">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="counter#providerPolicySet">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="counter#providerPolicySetBindings">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="counter#securityProfileName">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="counter#startInstancesWhenFlowStarts">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="counter#startMode">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="counter#wlmPolicy">
+    </ConfigurableProperty>
+  </CompiledMessageFlow>
+</Broker>
