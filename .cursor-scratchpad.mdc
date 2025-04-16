@@ -3,6 +3,24 @@ description:
 globs: 
 alwaysApply: false
 ---
+Need to add this documentation to @Docs from Cursor before start:
+https://github.com/CarlosJorgeA/camel-docs-clean/tree/main/fullDoc
+
+It's need to pass the links in this index individually, it means:
+
+1. https://github.com/CarlosJorgeA/camel-docs-clean/blob/main/fullDoc/ibm.adoc
+
+2. https://github.com/CarlosJorgeA/camel-docs-clean/blob/main/fullDoc/manual-part1.adoc
+
+3. https://github.com/CarlosJorgeA/camel-docs-clean/blob/main/fullDoc/manual-part2.adoc
+
+4. https://github.com/CarlosJorgeA/camel-docs-clean/blob/main/fullDoc/manual-part3.adoc
+
+From the prompt you must to change the git repository that you will work.
+
+
+PROMPT:
+
 ## Task: Migrate IBM App Connect Enterprise project to Apache Camel (Spring Boot)
 
 We have an integration flow developed in IBM App Connect Enterprise (ACE) that needs to be migrated to Apache Camel using Java and Spring Boot. The project is already structured and pushed to this GitHub repository:
